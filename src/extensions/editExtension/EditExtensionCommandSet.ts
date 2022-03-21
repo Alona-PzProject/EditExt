@@ -31,10 +31,10 @@ export default class EditExtensionCommandSet extends BaseListViewCommandSet<IEdi
   }
 
   public onListViewUpdated(event: IListViewCommandSetListViewUpdatedParameters): void {
-    // Get Nevigate_To_New_ComputerOrder_Form Command
-    const compareOneCommand: Command = this.tryGetCommand('Nevigate_To_Edit_Form');
+    // Get Nevigate_To_New_Form Command
+    const compareOneCommand: Command = this.tryGetCommand('Nevigate_To_New_Form');
 
-    // Get Nevigate_To_Edit_ComputerOrder_Form Command
+    // Get Nevigate_To_Edit_Form Command
     const compareSecondCommand: Command = this.tryGetCommand('Nevigate_To_Edit_Form');
 
     // Get current library name from pageContext
